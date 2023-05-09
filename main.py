@@ -66,7 +66,8 @@ def index():
 def callback():
     code = request.args.get('code')
     access_token = exchange_code(code)['access_token']
-    add_to_guild(access_token, 1068175810864877579)#ギルドID
+    # 第2引数はギルドID(大阪電通大サーバー)
+    add_to_guild(access_token, 1068175810864877579)
     return "認証が完了しました。このページを閉じてください。"
 
 if __name__ == "__main__":
