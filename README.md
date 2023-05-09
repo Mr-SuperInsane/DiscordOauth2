@@ -1,0 +1,2 @@
+# DiscordOauth2
+Discord Oauth2を使用してユーザーをサーバーに追加するBOT認証
