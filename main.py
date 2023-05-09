@@ -4,7 +4,7 @@ from flask import Flask, request
 
 API_ENDPOINT = 'https://discord.com/api/v10'
 CLIENT_ID = '1104942716305027123'
-CLIENT_SECRET = 'Buzsx7tUKFr6PCMZbBtdpNKII8bh1eNk'
+CLIENT_SECRET = 'yiUppztLyAKb4D1Y1qyc0hkWGxOKBu6n'
 REDIRECT_URI = 'http://localhost:8000/callback'
 
 app = Flask(__name__)
