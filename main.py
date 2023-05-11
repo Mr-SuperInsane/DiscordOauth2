@@ -3,10 +3,11 @@ from urllib.parse import urlencode
 from flask import Flask, request
 
 API_ENDPOINT = 'https://discord.com/api/v10'
-CLIENT_ID = '1104942716305027123'
-CLIENT_SECRET = 'yiUppztLyAKb4D1Y1qyc0hkWGxOKBu6n'
+CLIENT_ID = 'クライアントID'
+CLIENT_SECRET = 'クライアントシークレット'
 REDIRECT_URI = 'http://localhost:8000/callback'
-GUILD_ID = 1068175810864877579
+GUILD_ID = ギルドID(サーバーID)
+BOT_TOKEN = 'ボットトークン'
 
 app = Flask(__name__)
 
@@ -47,12 +48,11 @@ def get_user_id(access_token):
 def add_to_guild(access_token, guild_id):
     user_id = get_user_id(access_token)
     url = f'{API_ENDPOINT}/guilds/{guild_id}/members/{user_id}'
-    bot_token = 'MTEwNDk0MjcxNjMwNTAyNzEyMw.GLMge4.OzEwe24cUF9zmfseF8Meb7HR0mJjIem4M5_6Mw'
     data = {
         'access_token': access_token,
     }
     headers = {
-        'Authorization': f'Bot {bot_token}',
+        'Authorization': f'Bot {BOT_TOKEN}',
         'Content-Type': 'application/json',
     }
     response = requests.put(url=url, headers=headers, json=data)
@@ -67,7 +67,6 @@ def index():
 def callback():
     code = request.args.get('code')
     access_token = exchange_code(code)['access_token']
-    # 第2引数はギルドID(大阪電通大サーバー)
     add_to_guild(access_token, GUILD_ID)
     return "認証が完了しました。このページを閉じてください。"
 
