@@ -6,6 +6,7 @@ API_ENDPOINT = 'https://discord.com/api/v10'
 CLIENT_ID = '1104942716305027123'
 CLIENT_SECRET = 'yiUppztLyAKb4D1Y1qyc0hkWGxOKBu6n'
 REDIRECT_URI = 'http://localhost:8000/callback'
+GUILD_ID = 1068175810864877579
 
 app = Flask(__name__)
 
@@ -67,7 +68,7 @@ def callback():
     code = request.args.get('code')
     access_token = exchange_code(code)['access_token']
     # 第2引数はギルドID(大阪電通大サーバー)
-    add_to_guild(access_token, 1068175810864877579)
+    add_to_guild(access_token, GUILD_ID)
     return "認証が完了しました。このページを閉じてください。"
 
 if __name__ == "__main__":
