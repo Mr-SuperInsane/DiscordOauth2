@@ -17,9 +17,9 @@ Discord Oauth2認証を使用して自動でユーザーをサーバーに招待
 
 ソースコードの6行目から9行目の定数に各環境に合わせた値を代入する必要があります。それらの値は全てDiscord Developer Portalに記載されています。
 
-- CLIENT_ID：OAuth2/General
-- CLIENT_SECRET：OAuth2/General
-- REDIRECT_URI：OAuth2/General(Redirectsに設定した値)
-- BOT_TOKEN：Bot(Build-A-Bot/TOKEN)
+- CLIENT_ID(str)：OAuth2/General
+- CLIENT_SECRET(str)：OAuth2/General
+- REDIRECT_URI(str)：OAuth2/General(Redirectsに設定した値)
+- BOT_TOKEN(str)：Bot(Build-A-Bot/TOKEN)
 
-10行目のギルドID(サーバーID)はDiscordのサーバー設定のウィジェットから取得できます。
+10行目のGUILD_ID(int)はDiscordのサーバー設定のウィジェットから取得できます。
