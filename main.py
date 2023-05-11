@@ -6,8 +6,8 @@ API_ENDPOINT = 'https://discord.com/api/v10'
 CLIENT_ID = 'クライアントID'
 CLIENT_SECRET = 'クライアントシークレット'
 REDIRECT_URI = 'http://localhost:8000/callback'
-GUILD_ID = ギルドID(サーバーID)
 BOT_TOKEN = 'ボットトークン'
+GUILD_ID = ギルドID(サーバーID)
 
 app = Flask(__name__)
 
