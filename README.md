@@ -4,6 +4,8 @@ Discord Oauth2認証を使用して自動でユーザーをサーバーに招待
 
 # Discord Developer Portal設定
 
+※先にDiscord Developer PortalでアプリケーションおよびBotを作成しておく必要があります  
+
 - Bot：PUBLIC BOTを有効にする
 - OAuth2/General：RedirectsにリダイレクトURLを設定する(http://ドメイン/callback / ローカル環境の場合はlocalhost:8000)
 - OAuth2/General：Default Authorization Link/AUTHORIZATION METHODでIn-app Authorizationを選択する
