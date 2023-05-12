@@ -1,16 +1,16 @@
 # DiscordOauth2
 
-Discord Oauth2認証を使用して自動でユーザーをサーバーに招待します。
+Discord Oauth2認証を使用して自動でユーザーをサーバーに招待します。  
 This code invite discord user used Discord OAuth2
 
 ### ソースコードの使用について
 
-このソースコードは自由に使ってください。ただし再配布や悪用は厳禁です。
+このソースコードは自由に使ってください。ただし再配布や悪用は厳禁です。  
 This code is free. But redistribution and misuse prohibited.
 
 # Discord Developer Portal設定
 
-※先にDiscord Developer PortalでアプリケーションおよびBotを作成しておく必要があります 
+※先にDiscord Developer PortalでアプリケーションおよびBotを作成しておく必要があります。  
 You have to create app and bot in Discord Developer Portal.  
 
 - Bot：PUBLIC BOTを有効にする
@@ -24,7 +24,7 @@ You have to create app and bot in Discord Developer Portal.
 
 # ソースコードに必要な情報
 
-ソースコードの6行目から9行目の定数に各環境に合わせた値を代入する必要があります。それらの値は全てDiscord Developer Portalに記載されています。
+ソースコードの6行目から9行目の定数に各環境に合わせた値を代入する必要があります。それらの値は全てDiscord Developer Portalに記載されています。  
 You have to enter the value in line6, line9. There are in Discord Developer Portal.  
 
 - CLIENT_ID(str)：OAuth2/General
@@ -37,5 +37,5 @@ You can get GUILD_ID in Discord Server 'settings'/'widget'.
 
 # 補足
 
-58行目のresponseにはjson形式でDiscordユーザー情報が格納されています。response.text['key']で情報を取得できます。
+58行目のresponseにはjson形式でDiscordユーザー情報が格納されています。response.text['key']で情報を取得できます。  
 You can get discord user information in "response"(line58). "response" is json. So you can get like this. "response.text['value']"
