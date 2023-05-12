@@ -25,3 +25,7 @@ Discord Oauth2認証を使用して自動でユーザーをサーバーに招待
 - BOT_TOKEN(str)：Bot(Build-A-Bot/TOKEN)
 
 10行目のGUILD_ID(int)はDiscordのサーバー設定のウィジェットから取得できます。
+
+# 補足
+
+58行目のresponseにはjson形式でDiscordユーザー情報が格納されています。response.text['key']で情報を取得できます。
