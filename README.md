@@ -32,7 +32,7 @@ You have to enter the value in line6, line9. There are in Discord Developer Port
 - REDIRECT_URI(str)：OAuth2/General(Redirectsに設定した値)
 - BOT_TOKEN(str)：Bot(Build-A-Bot/TOKEN)
 
-10行目のGUILD_ID(int)はDiscordのサーバー設定のウィジェットから取得できます。
+10行目のGUILD_ID(int)はDiscordのサーバー設定のウィジェットから取得できます。  
 You can get GUILD_ID in Discord Server 'settings'/'widget'. 
 
 # 補足
