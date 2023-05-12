@@ -3,11 +3,11 @@ from urllib.parse import urlencode
 from flask import Flask, request
 
 API_ENDPOINT = 'https://discord.com/api/v10'
-CLIENT_ID = 'クライアントID'
-CLIENT_SECRET = 'クライアントシークレット'
+CLIENT_ID = 'YOUR_CLIENT_ID'
+CLIENT_SECRET = 'YOUR_CLIENT_SECRET'
 REDIRECT_URI = 'http://localhost:8000/callback'
-BOT_TOKEN = 'ボットトークン'
-GUILD_ID = ギルドID(サーバーID)
+BOT_TOKEN = 'YOUR_BOT_TOKENS'
+GUILD_ID = YOUR_GUILD_ID(YOUR_SERVER_ID)
 
 app = Flask(__name__)
 
