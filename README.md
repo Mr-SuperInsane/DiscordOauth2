@@ -2,6 +2,10 @@
 
 Discord Oauth2認証を使用して自動でユーザーをサーバーに招待します。
 
+## ソースコードの使用について
+
+このソースコードは自由に使ってください。ただし再配布や悪用は厳禁です。
+
 # Discord Developer Portal設定
 
 ※先にDiscord Developer PortalでアプリケーションおよびBotを作成しておく必要があります  
